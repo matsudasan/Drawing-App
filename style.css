@@ -1,0 +1,59 @@
+body{
+    width:100%;
+    margin: 0;
+    padding: 5px 0;
+}
+.container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+    margin: 0 auto;
+}
+.draw{
+    width: 100%;
+}
+#canvas{
+    height: 500px;
+    border:1px solid black;
+    display: block;
+}
+
+.items{
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.item:not(:last-child){
+    margin-right: 20px;
+}
+
+button{
+    margin-top: 20px;
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#stalker{
+    pointer-events: none;
+    position: absolute;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 800px){
+    .container{
+        width: 95%;
+    }
+}
